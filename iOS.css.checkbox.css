@@ -1,0 +1,133 @@
+/* Begin */
+
+/**
+ * the outer div that acts as a wrapper for the entire iOS checkbox element
+ */
+.iOScheckbox {
+	background: -webkit-gradient(linear, left bottom, left top, from(#d0d0d0), to(#a0a0a0));
+	height: 27px;
+	width: 77px;
+	border-radius: 27px;
+	-webkit-background-clip: padding-box;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	box-shadow: 0 0 1px 1px rgba(0,0,0,0.1) inset;
+	position: relative;
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+	-webkit-tap-highlight-color: transparent;
+}
+
+/**
+ * the inner div of the wrapper
+ */
+
+
+/* the blue and white mobile spans */
+.iOScheckbox div > span {
+	width: 77px;
+	height: 100%;
+	display: block;
+	float: left;
+	font: bold 16px/29px "Helvetica", Arial, Helvetica, Geneva, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+	-webkit-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+.mobile {
+	width: 154px;
+	height: 100%;
+	-webkit-transform: translateX(-64px);
+	position: absolute;
+}
+.mobile.transitions {
+	-webkit-transition: -webkit-transform 200ms ease-in-out;
+}
+	.iOScheckbox.on .mobile {
+		-webkit-transform: translateX(-14px);
+	}
+
+/*	shadow that acts as overlay over the blue und white mobile divs, but
+	not the circle */
+.inset-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: transparent;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.3) inset, 0 0 1px 1px rgba(0,0,0,0.15) inset;
+	border-radius: 50px;
+}
+/* highly translucent overlay, 13px moved from top */
+.inset-highlight {
+	position: absolute;
+	top: 14px;
+	left: 3px;
+	right: 3px;
+	bottom: 0px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-left-radius: 13px;
+	border-bottom-right-radius: 13px;
+
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.1)), to(rgba(255,255,255,0.4)));
+	box-shadow: 0 -1px 1px -1px black inset;
+}
+.inset-highlight.right {
+	opacity: 1;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.3)), to(rgba(255,255,255,0.6)));
+	-webkit-transition: opacity 80ms ease-in;
+	-webkit-transition-delay: 120ms;
+}
+	.iOScheckbox.on .inset-highlight.right {
+		opacity: 0;
+		-webkit-transition-delay: 0ms;
+	}
+
+.left {
+	background: #017fea;
+	opacity: 0;
+	-webkit-transition: opacity 50ms ease-out;
+	-webkit-transition-delay: 200ms;
+	color: white;
+	padding-left: 5px;
+}
+/* fade out the left blue span as soon as he's not shown anymore */
+.iOScheckbox.on .left {
+	opacity: 1;
+	-webkit-transition-delay: 0ms;
+}
+
+span.right {
+	background: #eee;
+	color: #787878;
+	text-shadow: 0 1px 0 white !important;
+	padding-right: 3px; /* to center the OFF text */
+	border-bottom-right-radius: 10px;
+	//box-shadow: 0 0 1px 1px rgba(0,0,0,0.1) inset;
+}
+
+i {
+	position: absolute;
+	top: 1px;
+	width: 25px;
+	height: 25px;
+	border-radius: 15px;
+	display: block;
+	background: -webkit-gradient(linear, left top, left bottom, from(#d3d3d3), to(#fefefe));
+	position: absolute;
+	box-shadow: 0 0 1px 1px #fcfcfc inset, 0 1px 0 1px rgba(255,255,255,0.4) inset, 0 -1px 0 white inset, 0 0 2px 1px rgba(0,0,0,0.6);
+	-webkit-background-clip: padding-box;
+	
+	margin-left: 65px;
+}
+
+i.touchActive {
+	background: -webkit-gradient(linear, left top, left bottom, from(#c8c8c8), to(#e5e5e5));
+}
+
+.hidden-input {
+display: none;
+}
