@@ -1,4 +1,16 @@
 iOS.css
 =======
 
-High quality lib (CSS, JS) to imitate native iOS UI elements in Web Applications.
+iOS.css is a set of JavaScript and CSS files, that enable web developers to make use of pixel-perfect imitations of native iOS user interface elements in web applications.
+
+The project is growing over time, so far the following iOS UI elements have been added:
+
+* Checkboxes
+
+Will be added in the near future:
+
+* Lists
+* Navigation Bars
+
+*Dependencies*
+Depends on jQuery to select and modify DOM elements and handle events.
