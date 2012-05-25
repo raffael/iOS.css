@@ -46,7 +46,7 @@ var iOS = {
 		 */
 		var moveTriggerDelta,
 			// the threshold after which the full mobile transition from on to off (v.v.) shall be exeuted
-			moveTriggerThreshold = 3;											
+			moveTriggerThreshold = 2;											
 		
 		
 		/**
