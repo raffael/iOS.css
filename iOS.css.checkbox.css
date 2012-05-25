@@ -42,10 +42,17 @@
 	position: absolute;
 }
 .mobile.transitions {
-	-webkit-transition: -webkit-transform 200ms ease-in-out;
+	-webkit-transition: -webkit-transform 250ms ease-in-out;
 }
 	.iOScheckbox.on .mobile {
 		-webkit-transform: translateX(-14px);
+	}
+	
+	.iOScheckbox .mobile.touchActive .left {
+		/**
+		 * the blue side (left, on) must be shown while the users is dragging
+		 */
+		opacity: 1;
 	}
 
 /*	shadow that acts as overlay over the blue und white mobile divs, but
@@ -75,32 +82,35 @@
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.1)), to(rgba(255,255,255,0.4)));
 	box-shadow: 0 -1px 1px -1px black inset;
 }
+/**
+ *  the right side (white, off) needs a harder highlight overlay: 
+ */
 .inset-highlight.right {
 	opacity: 1;
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.3)), to(rgba(255,255,255,0.6)));
-	-webkit-transition: opacity 80ms ease-in;
-	-webkit-transition-delay: 120ms;
+	//-webkit-transition: opacity 80ms ease-in;
+	//-webkit-transition-delay: 120ms;
 }
 	.iOScheckbox.on .inset-highlight.right {
 		opacity: 0;
-		-webkit-transition-delay: 0ms;
+		//-webkit-transition-delay: 0ms;
 	}
 
-.left {
+.iOScheckbox span.left {
 	background: #017fea;
 	opacity: 0;
 	-webkit-transition: opacity 50ms ease-out;
-	-webkit-transition-delay: 200ms;
+	-webkit-transition-delay: 250ms;
 	color: white;
 	padding-left: 5px;
 }
 /* fade out the left blue span as soon as he's not shown anymore */
-.iOScheckbox.on .left {
+.iOScheckbox.on span.left {
 	opacity: 1;
 	-webkit-transition-delay: 0ms;
 }
 
-span.right {
+.iOScheckbox span.right {
 	background: #eee;
 	color: #787878;
 	text-shadow: 0 1px 0 white !important;
@@ -109,7 +119,7 @@ span.right {
 	//box-shadow: 0 0 1px 1px rgba(0,0,0,0.1) inset;
 }
 
-i {
+.iOScheckbox i {
 	position: absolute;
 	top: 1px;
 	width: 25px;
@@ -124,10 +134,10 @@ i {
 	margin-left: 65px;
 }
 
-i.touchActive {
+.iOScheckbox .mobile.touchActive i {
 	background: -webkit-gradient(linear, left top, left bottom, from(#c8c8c8), to(#e5e5e5));
 }
 
-.hidden-input {
+.iOScheckbox .hidden-input {
 display: none;
 }
