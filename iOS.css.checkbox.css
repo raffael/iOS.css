@@ -15,6 +15,7 @@
 	-webkit-transform: translate3d(0,0,0);
 	-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
 }
 
 /**
@@ -23,7 +24,8 @@
 
 
 /* the blue and white mobile spans */
-.iOScheckbox div > span {
+.iOScheckbox
+div > span {
 	width: 77px;
 	height: 100%;
 	display: block;
@@ -35,12 +37,14 @@
 	-webkit-box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
 }
+.iOScheckbox
 .mobile {
 	width: 154px;
 	height: 100%;
 	-webkit-transform: translateX(-64px);
 	position: absolute;
 }
+.iOScheckbox
 .mobile.transitions {
 	-webkit-transition: -webkit-transform 250ms ease-in-out;
 }
@@ -57,6 +61,7 @@
 
 /*	shadow that acts as overlay over the blue und white mobile divs, but
 	not the circle */
+.iOScheckbox
 .inset-shadow {
 	position: absolute;
 	top: 0;
@@ -68,6 +73,7 @@
 	border-radius: 50px;
 }
 /* highly translucent overlay, 13px moved from top */
+.iOScheckbox
 .inset-highlight {
 	position: absolute;
 	top: 14px;
@@ -85,6 +91,7 @@
 /**
  *  the right side (white, off) needs a harder highlight overlay: 
  */
+.iOScheckbox
 .inset-highlight.right {
 	opacity: 1;
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.3)), to(rgba(255,255,255,0.6)));
@@ -96,7 +103,8 @@
 		//-webkit-transition-delay: 0ms;
 	}
 
-.iOScheckbox span.left {
+.iOScheckbox
+span.left {
 	background: #017fea;
 	opacity: 0;
 	-webkit-transition: opacity 50ms ease-out;
@@ -119,7 +127,8 @@
 	//box-shadow: 0 0 1px 1px rgba(0,0,0,0.1) inset;
 }
 
-.iOScheckbox i {
+.iOScheckbox
+i {
 	position: absolute;
 	top: 1px;
 	width: 25px;
@@ -134,10 +143,12 @@
 	margin-left: 65px;
 }
 
-.iOScheckbox .mobile.touchActive i {
+.iOScheckbox
+.mobile.touchActive i {
 	background: -webkit-gradient(linear, left top, left bottom, from(#c8c8c8), to(#e5e5e5));
 }
 
-.iOScheckbox .hidden-input {
+.iOScheckbox
+.hidden-input {
 display: none;
 }
