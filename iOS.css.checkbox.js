@@ -1,4 +1,4 @@
-var iOS = {
+window.iOS = $.extend(window.iOS || {},{
 
 	checkbox: function(checkboxElement){
 	
@@ -147,4 +147,4 @@ var iOS = {
 		}
 			
 	}
-};
+});
