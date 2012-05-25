@@ -1,0 +1,66 @@
+/**
+ * List Boxes
+ * <ul class="list"><li></li></ul>
+ * Add 'light' class to UL to make font weight light
+ */
+ul.iOSlist {
+	list-style: none;
+	background: #f7f7f7;
+	border: 1px solid #a2a7ad;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	box-shadow: 0 2px 0 -1px rgba(255,255,255,.9), 0 1px 0 #e4e4e4 inset;
+	text-shadow: 0 1px 0 white;
+	overflow: hidden;
+	-webkit-transform: translateZ(0);
+	font: bold 1em/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+ul.iOSlist.light { font-weight: normal; }
+ul.iOSlist li {
+	padding: 9px 10px;
+	border-top: 1px solid #d0d0d0;
+	border-bottom: 1px solid #f3f3f3;
+	position: relative;
+	height: 43px;
+	-webkit-box-sizing: border-box;
+}
+ul.iOSlist li:first-of-type {
+	border-top: none;
+}
+ul.iOSlist li:last-of-type {
+	border-bottom: none;
+}
+ul.iOSlist li .iOScheckbox {
+	position: absolute;
+	right: 10px;
+	top: 8px;
+}
+ul.iOSlist + ul.iOSlist {
+	margin-top: 20px;
+}
+
+/* you can embed the <ul /> into a div with the following class: */
+div.iOSlist-background {
+	padding: 10px 9px;
+	background: url(images/iOSlist-background.gif);
+}
+
+/* you can place <p /> tags after lists to describe them further */
+div.iOSlist-background p {
+	color: #4f596d;
+	text-shadow: 0 1px 0 white;
+	text-align: center;
+	font: normal 15px/19px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	padding: 8px 10px 14px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+/* you can place <h2 /> tags before lists to title them */
+div.iOSlist-background h2 {
+	font: bold 1em/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	padding-left: 10px;
+	padding-bottom: 6px;
+	text-shadow: 0 1px 0 white;
+	color: #4d576b;
+}

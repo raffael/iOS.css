@@ -1,0 +1,11 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+}
+iframe {
+	width: 320px;
+	height: 480px;
+	box-shadow: 0px 1px 15px -5px black;
+}

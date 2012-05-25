@@ -90,11 +90,10 @@ var iOS = {
 		 * to the right side, based on how much the user has dragged so far.
 		 */
 		}).bind('touchend', function(){
-			chip.removeClass('touchActive');
+			mobile.removeClass('touchActive');
 			
 			var userTapped = (moveTriggerDelta < moveTriggerThreshold);
 			
-			console.log("usedTapped: "+userTapped);
 			if (userTapped) {
 				/**
 				 * user did not move a lot, so trigger a 'tap' event:

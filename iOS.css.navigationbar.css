@@ -1,0 +1,64 @@
+nav {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 49px;
+	color: white;
+	border-top: 1px solid #454545;
+	box-shadow: 0 -1px 0 0px #2c2c2c;
+	z-index: 5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2e2e2e), color-stop(0.49999, #131313), color-stop(0.5, black), to(black));
+}
+nav > div {
+	margin: 0 auto;
+	width: 100%;
+	min-width: 320px;
+	font: bold 1em/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+nav > div > span {
+	display: block;
+	height: 47px;
+	float: left;
+	text-align: center;
+	padding: 1px 2px 2px;
+}
+nav.grid5 > div > span {
+	width: 18.75%;
+}
+
+nav .ico {
+	display: block;
+	position: absolute;
+	margin: 5px 0 0 -13px;
+	width: 25px;
+	height: 25px;
+	left: 50%;
+	background: no-repeat;
+	-webkit-background-size: 200% 100%;
+}
+nav .current .ico {
+	background-position: 100% 0;
+}
+
+nav a {
+	display: block;
+	width: 100%;
+	height: 46px;
+	text-decoration: none;
+	color: white !important;
+	line-height: 7em;
+	font-size: 10px;
+	position: relative;
+}
+nav a.current {
+	background-image: -webkit-linear-gradient(bottom, #1e1e1e 0%, #252525 49.9999%, #343434 50%, #4a4a4a 100%);
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.1) inset;
+	height: 46px;
+}
+nav a.active {
+	background: red;
+}
