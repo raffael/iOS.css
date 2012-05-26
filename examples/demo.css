@@ -13,3 +13,11 @@ div.iOSlist-background {
 	top: 44px;
 	height: 400px;
 }
+
+nav i {
+	background: url(icon2.png);
+}
+
+nav .current i {
+	background: url(icon.png);
+}
