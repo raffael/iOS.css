@@ -36,6 +36,12 @@ h1 {
 	font-size: 22px;
 }
 
+h1 + small {
+	font-size: 10px;
+	font-weight: bolder;
+	color:#aaa;
+}
+
 h2 {
 	color:#2987e7;
 	padding: 10px 0;
@@ -73,4 +79,19 @@ p strong {
 .button:active {
 	-webkit-transform: translateY(1px);
 	box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0);
+}
+
+
+
+@media only screen and (max-width: 480px) {
+	#wrapper {
+		margin: 0;
+		width: 320px;
+	}
+	#wrapper > * {
+		display: none;
+	}
+	#app {
+		display: block;
+	}
 }
