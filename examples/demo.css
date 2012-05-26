@@ -1,0 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+#wrapper {
+	height: 480px;
+}
+
+div.iOSlist-background {
+	position: absolute;
+	top: 44px;
+	height: 400px;
+}
