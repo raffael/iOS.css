@@ -25,7 +25,7 @@ The project is growing over time, so far the following iOS UI elements have been
 * Black Navigation Bars
 * Default Header
 
-Feature Requests? Push them to *@raffael-me*.
+Feature Requests? Push them to [*@raffael-me*](http://www.twitter.com/raffael-me).
 
 ---
 **Tip**
