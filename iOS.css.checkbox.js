@@ -63,7 +63,7 @@
 			 * otherwise, if the user touches and holds the element, the user is dragging the element.
 			 */
 				// the time threshold before which the full mobile transition from on to off (v.v.) shall be exeuted
-			var isDraggingTimeThreshold		= 60;											
+			var isDraggingTimeThreshold		= 120;											
 			
 			/**
 			 * on touchstart, the touchStartTime is reset to the current timestamp and the
@@ -106,7 +106,7 @@
 			 */
 			}).bind('touchend', function(){
 				mobile.removeClass('touchActive');
-				
+
 				var userTapped = (new Date() - touchStartTime < isDraggingTimeThreshold);
 				
 				if (userTapped) {
