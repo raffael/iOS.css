@@ -56,7 +56,7 @@ ul.iOSlist + ul.iOSlist {
 /* you can embed the <ul /> into a div with the following class: */
 div.iOSlist-background {
 	padding: 10px 9px;
-	background: -webkit-linear-gradient(left, #C5CCD4 72%,#CBD2D8 72%,#CBD2D8 100%);
+	background: -webkit-linear-gradient(left, #C5CCD4 71%, #CBD2D8 71%, #CBD2D8 100%);
 	-webkit-background-size: 7px 1px;
 }
 
