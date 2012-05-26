@@ -26,6 +26,9 @@ ul.iOSlist {
 	-webkit-transform: translateZ(0);
 	font: bold 1em/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
+ul.iOSlist * {
+	-webkit-user-select: none;
+}
 ul.iOSlist.light { font-weight: normal; }
 ul.iOSlist li {
 	padding: 9px 10px;
@@ -53,7 +56,8 @@ ul.iOSlist + ul.iOSlist {
 /* you can embed the <ul /> into a div with the following class: */
 div.iOSlist-background {
 	padding: 10px 9px;
-	background: url(images/iOSlist-background.gif);
+	background: -webkit-linear-gradient(left, #C5CCD4 72%,#CBD2D8 72%,#CBD2D8 100%);
+	-webkit-background-size: 7px 1px;
 }
 
 /* you can place <p /> tags after lists to describe them further */
