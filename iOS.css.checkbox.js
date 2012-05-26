@@ -47,7 +47,8 @@
 				mobileOff	= -64,													// right position for the mobile elements in the on & off state
 				x			= self.hasClass('on') ? mobileOn : mobileOff,
 				stateOn		= self.hasClass('on'),
-				touchStartX	= 0;													// stores the initial position when the user touch-and-holds
+				touchStartX	= 0,													// stores the initial position when the user touch-and-holds
+				touchStartTime;														// timestamp of touch start event
 			
 			var insetHighlightRightOpacity	= (stateOn) ? 0 : 1,
 				insetHighlightLeft			= self.find('.inset-highlight.left'),
@@ -61,32 +62,29 @@
 			 * that is, the element switches from on to off or vice versa,
 			 * otherwise, if the user touches and holds the element, the user is dragging the element.
 			 */
-			var moveTriggerDelta,
-				// the threshold after which the full mobile transition from on to off (v.v.) shall be exeuted
-				moveTriggerThreshold = 2;											
-			
+				// the time threshold before which the full mobile transition from on to off (v.v.) shall be exeuted
+			var isDraggingTimeThreshold		= 60;											
 			
 			/**
-			 * on touchstart, the moveTriggerDelta is reset and the touch start position is stored
+			 * on touchstart, the touchStartTime is reset to the current timestamp and the
+			 * touch start position is stored
 			 */
 			self.bind('touchstart', function(e){
-				moveTriggerDelta = 0;
 				touchStartX	= e.originalEvent.touches[0].clientX;
+				touchStartTime = new Date();
 	
 			/**
-			 * on touchmove, the moveTriggerDelta will be incremented by the amount of movement
+			 * on touchmove, the touchStartTime will be compared to the current time,
+			 * if the ellapsed time is higher than the isDraggingTimeThreshold, the user
+			 * seems to be dragging the element, instead of just tapping it.
 			 */
 			}).bind('touchmove', function(e) {
-			
-				// track how much the user is moving on the element
-				//moveTriggerDelta += e.originalEvent.touches[0].clientX+e.originalEvent.touches[0].clientY;
-				moveTriggerDelta += Math.abs(e.originalEvent.touches[0].clientX - touchStartX);
-				
+							
 				// add the touchActive class on the chip
 				mobile.addClass('touchActive');
 				
 				// calculate the delta X since the touchstart event
-				var isDragging = (moveTriggerDelta > moveTriggerThreshold);
+				var isDragging = (new Date() - touchStartTime > isDraggingTimeThreshold);
 				
 				if (isDragging) {
 					var deltaX	= e.originalEvent.touches[0].clientX - touchStartX;
@@ -109,7 +107,7 @@
 			}).bind('touchend', function(){
 				mobile.removeClass('touchActive');
 				
-				var userTapped = (moveTriggerDelta < moveTriggerThreshold);
+				var userTapped = (new Date() - touchStartTime < isDraggingTimeThreshold);
 				
 				if (userTapped) {
 					/**
