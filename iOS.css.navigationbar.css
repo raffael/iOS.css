@@ -111,7 +111,7 @@ i {
 nav.iOSnavigationbar
 sup {
 	position: absolute;
-	top: -2px;
+	top: -1px;
 	right: 0px;
 	background: -webkit-linear-gradient(#f4b2b6 0%, #e3444b 49%, #da0711 50%);
 	text-shadow: 0 0 1px 1px #da0711;
@@ -119,8 +119,9 @@ sup {
 	width: 14px;
 	height: 14px;
 	border: 2px solid white;
-	box-shadow: 0 1px 3px -1px rgba(0,0,0,0.7);
+	box-shadow: 0 3px 4px -1px black;
+	/* padding: 0 3px; if more than one character in sup */
 	border-radius: 20px;
 	color: white;
-	font: bold 11px/11px "Helvetica Neue";
+	font: bold 11px/13px "Helvetica Neue";
 }
