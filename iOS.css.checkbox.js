@@ -1,4 +1,14 @@
-(function(){
+/*
+ * iOS.css Checkboxes (JS) v1.0
+ * http://www.raffael.me/iOS.css/
+ * http://github.com/raffael-me/iOS.css/
+ *
+ * Copyright (c) 2012 Raffael Hannemann
+ * Dual licensed under the MIT.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ */
+ (function(){
 
 	if (typeof jQuery == 'undefined') {
 		throw "iOS.css: jQuery not found. Be sure to inject jQuery before loading iOS.css";
