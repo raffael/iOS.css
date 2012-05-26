@@ -27,6 +27,7 @@ The project is growing over time, so far the following iOS UI elements have been
 
 Feature Requests? Push them to *@raffael-me*.
 
+---
 **Tip**
 
 In order to mimic touch events on your Desktop browser, you can use [phantom-limb](https://github.com/brian-c/phantom-limb).
