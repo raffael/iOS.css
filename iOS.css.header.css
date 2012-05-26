@@ -8,7 +8,16 @@
  * http://www.opensource.org/licenses/mit-license.php
  *
  */
- header {
+
+/**
+ * USAGE:
+ * 
+ * 1. Make a <header class="iOSheader"></header> tag,
+ * 2. Place a <h1>Title</h1> tag inside the header tag.
+ *
+ * Improvements in terms of header buttons and correct alignments, text overflow coming soon.
+ */
+ header.iOSheader {
 	height: 44px;
 	width: 100%;
 	position: absolute;
@@ -26,9 +35,10 @@
 	color: white;
 	text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
 	z-index: 10;
+	-webkit-user-select: none;
 }
 
-
-header h1 {
+header.iOSheader
+h1 {
 	font:inherit;
 }
