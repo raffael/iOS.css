@@ -35,7 +35,7 @@ ul.iOSlist li {
 	border-top: 1px solid #d0d0d0;
 	border-bottom: 1px solid #f3f3f3;
 	position: relative;
-	height: 43px;
+	min-height: 43px;
 	-webkit-box-sizing: border-box;
 }
 ul.iOSlist li:first-of-type {
