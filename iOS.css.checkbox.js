@@ -8,7 +8,18 @@
  * http://www.opensource.org/licenses/mit-license.php
  *
  */
- (function(){
+
+/**
+ * Checkbox: Usage
+ * (1) Add any variation of an <input type="checkbox" /> tag to your HTML
+ * (2) Apply the iOS.checkbox() method on the jQuery result:
+ *		iOS.checkbox($('input[type="checkbox"]));
+ * (3) No third step.
+ *
+ * NOTE: The input only reacts on touch events. Use the Phantom Limb lib or something similar to simulate touch events on Desktop browsers.
+ */
+
+(function(){
 
 	if (typeof jQuery == 'undefined') {
 		throw "iOS.css: jQuery not found. Be sure to inject jQuery before loading iOS.css";
