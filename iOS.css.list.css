@@ -61,7 +61,7 @@ div.iOSlist-background {
 }
 
 /* you can place <p /> tags after lists to describe them further */
-div.iOSlist-background p {
+div.iOSlist-background > p {
 	color: #4f596d;
 	text-shadow: 0 1px 0 white;
 	text-align: center;
@@ -72,7 +72,7 @@ div.iOSlist-background p {
 }
 
 /* you can place <h2 /> tags before lists to title them */
-div.iOSlist-background h2 {
+div.iOSlist-background > h2 {
 	font: bold 1em/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	padding-left: 10px;
 	padding-bottom: 6px;
