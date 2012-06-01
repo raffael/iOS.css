@@ -1,0 +1,42 @@
+/*
+ * iOS.css Silver Navigation Bar (CSS) v1.0
+ * http://www.raffael.me/iOS.css/
+ * http://github.com/raffael-me/iOS.css/
+ *
+ * Copyright (c) 2012 Raffael Hannemann
+ * Dual licensed under the MIT.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ */
+
+/**
+ * USAGE:
+ * 
+ * 1. Follow the instructions of building a normal navigation bar.
+ * 2. Add the ".silver" class to the <nav /> tag to apply the silver style.
+ *
+ */
+nav.iOSnavigationbar.silver {
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#c8c3bf));
+	box-shadow: 0 -1px 0 #8c8b89,
+				0 0 10px rgba(0,0,0,0.5);
+	border-top: none;
+	height: 48px;
+}
+
+nav.iOSnavigationbar.silver
+a {
+	color: #676664;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+	top: 1px;
+	line-height: 75px;
+}
+nav.iOSnavigationbar.silver
+a.current {
+	background-image: -webkit-linear-gradient(bottom, #989491 0%, #7c7b77 50%, #5a5a5a 100%);
+	box-shadow: 0 0 1px 1px rgba(0,0,0,0.1) inset,
+				0 1px 0 #f1edec;
+	height: 44px;
+	color: white;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
