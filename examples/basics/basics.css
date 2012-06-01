@@ -20,9 +20,9 @@ div.iOSlist-background {
 }
 
 nav i {
-	background: url(icon2.png);
+	background: url(placeholder.png);
 }
 
 nav .current i {
-	background: url(icon.png);
+	background: url(active.png);
 }
