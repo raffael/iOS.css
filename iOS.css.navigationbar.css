@@ -17,7 +17,7 @@
  * (Optionally, wrap the <a /> tags into a <div /> wrapper to prevent the individual tabs
  * from stretching across the entire width of the screen).
  *
- * Apply the .current class to the anchor that represents the currently active tab.
+ * Apply the ".current" class to the anchor that represents the currently active tab.
  *
  * Apply one of the .grid[1,2,3,4,5] classes to the <nav /> tag based on how much tab items
  * you want.
@@ -25,7 +25,7 @@
  * The <i /> tags represent the icons. Icon should be 80px * 30px PNG files, which contain
  * both the active and the normal state side by side (40px * 30px each).
  * 
- * Place a <sup>[]</sup> to show a red notification bubble 
+ * Place a <sup>[]</sup> inside the <a /> elements to show a red notification bubble 
  *
  */
 nav.iOSnavigationbar {
@@ -38,6 +38,9 @@ nav.iOSnavigationbar {
 	border-top: 1px solid #454545;
 	box-shadow: 0 -1px 0 0px #2c2c2c;
 	background: -webkit-gradient(linear, left top, left bottom, from(#2e2e2e), color-stop(0.49999, #131313), color-stop(0.5, black), to(black));
+}
+nav.iOSnavigationbar * {
+	-webkit-user-select: none;
 }
 
 /**

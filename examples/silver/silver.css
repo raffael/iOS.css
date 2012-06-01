@@ -1,0 +1,26 @@
+/**
+ * NOTE: this file is not part of the iOS.css library.
+ * It is only used to define additional demo site related CSS rules.
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+#wrapper {
+	height: 480px;
+}
+
+div.iOSlist-background {
+	position: absolute;
+	top: 44px;
+	height: 400px;
+}
+
+nav i.me {			background-image: url(../tab-me.png); }
+nav i.all {			background-image: url(../tab-all.png); }
+nav i.basket {		background-image: url(../tab-basket.png); }
+nav i.download {	background-image: url(../tab-download.png); }
+nav i.search {		background-image: url(../tab-search.png); }
