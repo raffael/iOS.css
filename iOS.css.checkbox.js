@@ -33,7 +33,7 @@
 				var checkboxElement = $(this);
 				
 				// the HTML structure which the <input /> will be placed into
-				var structure	=	$('<div class="iOScheckbox on">'					// wrapper div
+				var structure	=	$('<div class="iOScheckbox">'					// wrapper div
 									+'		<div class="mobile">'						// the moving element that contains the blue and white elements
 									+'			<span class="left">On</span>'			// the blue element (on)
 									+'			<span class="right">Off</span>'			// the white element (off)
@@ -51,6 +51,9 @@
 				// insert the structure right after the <input />, then move the <input /> into the structure
 				checkboxElement.after(structure);
 				checkboxElement.appendTo(structure.find('.hidden-input'));
+				
+				// check if input is checked by default and add the appropriate class
+				if (checkboxElement.is(':checked')) structure.addClass('on');
 				
 				var self		= structure,
 					chip		= self.find('i'),										// the actual UI element (circle, chip)
