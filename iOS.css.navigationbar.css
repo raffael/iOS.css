@@ -117,7 +117,7 @@ sup {
 	top: -1px;
 	right: 0px;
 	background: -webkit-linear-gradient(#f4b2b6 0%, #e3444b 49%, #da0711 50%);
-	text-shadow: 0 0 1px 1px #da0711;
+	text-shadow: 0 1 0 1px #da0711;
 	display: block;
 	width: 14px;
 	height: 14px;

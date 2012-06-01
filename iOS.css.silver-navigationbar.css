@@ -19,15 +19,17 @@
 nav.iOSnavigationbar.silver {
 	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#c8c3bf));
 	box-shadow: 0 -1px 0 #8c8b89,
-				0 0 10px rgba(0,0,0,0.5);
+				0 0 10px rgba(0,0,0,0.5),
+				0 10px 0 10px black;
 	border-top: none;
 	height: 48px;
+	border-radius: 0 0 3px 3px;
 }
 
 nav.iOSnavigationbar.silver
 a {
 	color: #676664;
-	text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+	text-shadow: 0 1px 0 rgba(255,255,255,0.8);
 	top: 1px;
 	line-height: 75px;
 }
@@ -38,5 +40,9 @@ a.current {
 				0 1px 0 #f1edec;
 	height: 44px;
 	color: white;
-	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+	text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+}
+nav.iOSnavigationbar.silver
+sup {
+	text-shadow: none;
 }

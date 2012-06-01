@@ -1,0 +1,29 @@
+/*
+ * iOS.css Head (CSS) v1.0
+ * http://www.raffael.me/iOS.css/
+ * http://github.com/raffael-me/iOS.css/
+ *
+ * Copyright (c) 2012 Raffael Hannemann
+ * Dual licensed under the MIT.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ */
+
+/**
+ * USAGE:
+ * 
+ * 1. Make a <header class="iOSheader"></header> tag,
+ * 2. Place a <h1>Title</h1> tag inside the header tag.
+ *
+ * Improvements in terms of header buttons and correct alignments, text overflow coming soon.
+ */
+header.iOSheader.silver {	
+	background-image: -webkit-linear-gradient(top, #5a5a5a 0%, #323232 100%);
+	border-bottom-color: #555;
+	box-shadow: 0 2px 1px rgba(0,0,0,0.8);
+}
+
+header.iOSheader
+h1 {
+	font:inherit;
+}
