@@ -17,16 +17,21 @@
  *
  * Improvements in terms of header buttons and correct alignments, text overflow coming soon.
  */
- header.iOSheader {
+ 
+/* iOS 5 like blue header */
+header.iOSheader {
 	height: 44px;
 	width: 100%;
 	position: absolute;
 	top: 0;
 			
-	background: -webkit-linear-gradient(top, #b1bccc 0%, #8b9cb2 49.9999%, #8396ae 50%, #7186a1 100%);
-	
-	box-shadow: 0 1px 0 #ced5de inset;
-	border-bottom: 1px solid #2e3742;
+
+	background: -webkit-linear-gradient(top, #beccdd, #587397);
+	box-shadow: 0px 1px 1px rgba(255,255,255,0.7) inset,
+				0 1px 2px rgba(0,0,0,0.2);
+	border: none;
+	border-bottom: 1px solid #3f5c80;
+
 	border-top: 1px solid #5e6468;
 	height: 44px;
 	
@@ -38,7 +43,51 @@
 	-webkit-user-select: none;
 }
 
-header.iOSheader
-h1 {
+header.iOSheader h1 {
 	font:inherit;
+	display:inline;
+}
+
+header.grey > button {
+	position: absolute;
+	top: 9px;
+	left: 7px;
+	text-shadow: 0 1px 0 white;
+	color: #444;
+	font: bold 11px/11px "Lucida Grande";
+	padding: 3px 6px;
+	background: -webkit-linear-gradient(top, #ededee,#d6d8da);
+	box-shadow: 0 1px 0 white;
+	border-radius: 4px;
+	height: 28px;
+	border: 1px solid #adaeae;
+}
+
+/* apply this class to get rounded headers */
+header.rounded {
+	border-radius: 4px 4px 0 0; 
+}
+
+
+/* iOS 5 like blue header: apply both classes at the same time. */
+header.iOSheader.iOS5 {
+	background: -webkit-linear-gradient(top, #b1bccc 0%, #8b9cb2 49.9999%, #8396ae 50%, #7186a1 100%);
+	box-shadow: 0 1px 0 #ced5de inset;
+	border-bottom: 1px solid #2e3742;
+}
+
+/* grey iOS 6 Music app like header */
+header.iOSheader.grey {
+	background: -webkit-linear-gradient(top, #f4f5f6, #dedfdf);
+	box-shadow: 0px 1px 0 #7a7a7a inset,
+				0 1px 3px rgba(0,0,0,0.2);
+	border: none;
+	color: #474747;
+	text-shadow: 0 1px 0 white;
+	border-bottom: 1px solid #949494;
+}
+
+header.iOSheader.black {
+	background: -webkit-linear-gradient(top, #535353, #1c1c1c);
+	border-top: 1px solid #525252;
 }

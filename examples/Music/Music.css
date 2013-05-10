@@ -19,6 +19,13 @@ div.iOSlist-background {
 	height: 400px;
 }
 
+header { 
+	position: fixed !important;
+}
+
+ul {
+	margin-top: 44px;
+}
 nav i.me {			background-image: url(../tab-me.png); }
 nav i.all {			background-image: url(../tab-all.png); }
 nav i.basket {		background-image: url(../tab-basket.png); }

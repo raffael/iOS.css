@@ -79,3 +79,91 @@ div.iOSlist-background > h2 {
 	text-shadow: 0 1px 0 white;
 	color: #4d576b;
 }
+
+
+
+/* Plastic lists */
+ul.iOSplasticlist {
+	background: white;
+}
+ul.iOSplasticlist
+li {
+	background: #e9eaec;
+	border-bottom: 1px solid #e6e7e9;
+	border-top: 1px solid #ecedef;
+	box-shadow: 0 -1px 0 #fafafa,
+				0 1px 0 #cccdcf;
+	margin: 2px 0;
+	height: 43px;
+	color: #3e3e3e;
+	font: bold 18px/23px "Helvetica Neue";
+	padding: 1px 11px;
+	-webkit-box-sizing: border-box;
+	width: 100%;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+	-webkit-font-smoothing: antialiased;
+}
+ul.iOSplasticlist
+li small {
+	font: normal 13px/12px "Lucida Grande";
+	color: #909090;
+	display: block;
+	padding-left: 1px;
+}
+
+ul.iOSplasticlist
+li:last-of-type {
+	box-shadow: 0 -1px 0 #fafafa,
+				0px 3px 5px grey;
+}
+
+ul.iOSplasticlist
+li.iOSplasticlist-command {
+	font-size: 21px;
+	padding: 10px 11px;
+}
+
+ul.iOSplasticlist
+li.iOSplasticlist-sorting {
+	height: 25px;
+	font-size: 15px;
+	color: #4f4e4e;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+	background: -webkit-linear-gradient(top, #cbcdcd, #bebfc0);
+	border-bottom: 1px solid #aeafaf;
+	border-top: 1px solid #dfe0e1;
+	box-shadow: 0 1px 0 #b9babb;
+	margin-top: -1px;
+	padding-top: 0;
+}
+
+
+ul.iOSplasticlist
+li.iOSplasticlist-search {
+	height: 43px;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+	background: -webkit-linear-gradient(top, #d9d9d9, #c1c3c3);
+	border-bottom: 1px solid #bbbcbe;
+	border-top: 1px solid #d3d3d5;
+	box-shadow: 0 1px 0 #ababac;
+	padding-top: 0;
+}
+ul.iOSplasticlist
+li.iOSplasticlist-search input {
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	color: #767778;
+	border-radius: 20px;
+	box-shadow: 0 2px 0 #d1d2d2, 0 1px 2px rgba(0,0,0,0.4) inset;
+	height: 29px;
+	margin-top: 6px;
+	border: 1px solid grey;
+	background: #e9eaec;
+	-webkit-box-sizing: border-box;
+	padding: 4px 10px 4px 20px;
+	width: 100%;
+}
+ul.iOSplasticlist
+li.iOSplasticlist-search input::-webkit-input-placeholder {
+	color: #767778
+}

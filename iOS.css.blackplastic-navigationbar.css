@@ -1,0 +1,83 @@
+/*
+ * iOS.css Silver Navigation Bar (CSS) v1.0
+ * http://www.raffael.me/iOS.css/
+ * http://github.com/raffael-me/iOS.css/
+ *
+ * Copyright (c) 2012 Raffael Hannemann
+ * Dual licensed under the MIT.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ */
+
+/**
+ * USAGE:
+ * 
+ * 1. Follow the instructions of building a normal navigation bar.
+ * 2. Add the ".silver" class to the <nav /> tag to apply the silver style.
+ *
+ */
+nav.iOSnavigationbar.blackplastic {
+	background: -webkit-linear-gradient(top, #525252, #191919);
+	box-shadow: 0 -1px 0 0 rgba(255,255,255,0.8),
+				0 0 10px rgba(0,0,0,0.2),
+				0 10px 0 10px black;
+	border-top: none;
+	height: 48px;
+	border-radius: 0 0 3px 3px;
+}
+
+nav.iOSnavigationbar.blackplastic
+a {
+	color: #474747;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+	top: 0;
+	margin: 0;
+	line-height: 75px;
+	box-shadow: -1px 0px 0px 0 rgba(255,255,255,0.4) inset, /* lighten on the right */
+				 1px 0px 0px 0 rgba(0,0,0,0.05) inset; /* dark on the left */
+	height: 48px;
+}
+
+nav.iOSnavigationbar.blackplastic
+a:last-of-type {
+	box-shadow: 1px 0px 0px 0 rgba(0,0,0,0.05) inset; /* dark on the left */
+}
+nav.iOSnavigationbar.blackplastic
+a:first-of-type {
+	box-shadow: -1px 0px 0px 0 rgba(255,255,255,0.6) inset; /* lighten on the right */
+}
+
+nav.iOSnavigationbar.blackplastic
+a.current {
+	background-image: -webkit-linear-gradient(bottom, #e0e0e2, #d4d4d4, #c6c6c6);
+	box-shadow: 0 -1px 0 0 rgba(180,180,180,0.8),
+				0 1px 0 #f1edec,
+				-1px 0px 0px 0 rgba(0,0,0,0.2) inset;
+	height: 48px;
+	color: #383839;
+	border-radius: 0;
+	margin-top: 0;
+	top: 0;
+}
+nav.iOSnavigationbar a.current
+i {
+	background-position: 0 0;
+}
+
+nav.iOSnavigationbar.blackplastic
+a.current:after { /* inset shadow overlay */
+	position: absolute;
+	-webkit-box-sizing: border-box;
+	box-shadow: 0px 0px 5px rgb(180,180,180) inset,
+				0px -3px 10px rgba(0,0,0,0.9) inset;
+	-webkit-mask: -webkit-linear-gradient(bottom, transparent, white);
+	top: -1px;
+	left: 0;
+	content:"";
+	width:100%;
+	height:52px;
+}
+nav.iOSnavigationbar.blackplastic
+sup {
+	text-shadow: none;
+}
