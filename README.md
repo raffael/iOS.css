@@ -31,8 +31,6 @@ Feature Requests? Push them to [*@raffael_me*](http://www.twitter.com/raffael_me
 **Tip**
 
 In order to mimic touch events on your Desktop browser, you can use [phantom-limb](https://github.com/brian-c/phantom-limb).
-<<<<<<< HEAD
-=======
 
 ## Contact
 
@@ -43,4 +41,3 @@ In order to mimic touch events on your Desktop browser, you can use [phantom-lim
 ## Want more?
 
 Follow [@raffael-me](http://www.twitter.com/raffael-me/) for similar releases.
->>>>>>> Docs.
