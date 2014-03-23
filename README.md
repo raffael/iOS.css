@@ -1,6 +1,9 @@
 iOS.css
 =======
 
+**Update:** Due to the huge design changes in iOS 7, this project became redundant. You should check out [Framework7](http://www.idangero.us/framework7/) for an alternative way of developing HTML5 based applications for iOS 7.
+
+
 Demo: http://www.raffael.me/iOS.css/
 
 iOS.css is a set of JavaScript and CSS files, that enable web developers to make use of pixel-perfect imitations of native iOS user interface elements in web applications.
