@@ -43,9 +43,10 @@ div > span {
 	font: bold 16px/29px "Helvetica", Arial, Helvetica, Geneva, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
-	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
 	-webkit-box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
+	opacity: .5;
 }
 .iOScheckbox
 .mobile {
